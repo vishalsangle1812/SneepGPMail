@@ -1,0 +1,17 @@
+<resources>
+    <!-- Existing colors -->
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Add these new colors -->
+    <color name="colorAccentDark">#FF1A6B</color> <!-- Slightly lighter for dark theme -->
+    <color name="colorWarning">#FF6E6E</color>
+
+
+    <!-- Your existing colors -->
+    <color name="darkBackground">#121212</color>
+    <color name="cardBackground">#1E1E1E</color>
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#B3B3B3</color>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <!-- Dark theme versions of warning colors -->
+    <color name="colorWarning">#FF6E6E</color>  <!-- Lighter red for dark theme -->
+    <color name="colorSuccess">#66BB6A</color> <!-- Lighter green -->
+    <color name="colorInfo">#42A5F5</color>    <!-- Lighter blue -->
+</resources>

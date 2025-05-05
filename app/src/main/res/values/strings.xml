@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SnapGPMail</string>
+    <string name="no_images_found">No security images captured yet</string>
+    <string name="warning_title">Security Alert!</string>
+    <string name="warning_message">Unauthorized access detected</string>
+    <string name="settings">Settings</string>
+    <string name="email_subject">SnapGPMail Security Alert</string>
+    <string name="about">About</string>
+    <string name="clear_history">Clear History</string>
+    <string name="acknowledge">GOT IT</string>
+</resources>

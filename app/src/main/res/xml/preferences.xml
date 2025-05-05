@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Security Settings">
+        <EditTextPreference
+            android:key="attempt_threshold"
+            android:title="Attempts Before Capture"
+            android:defaultValue="3"
+            android:inputType="number"
+            android:summary="Number of failed attempts before action"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Email Configuration">
+        <EditTextPreference
+            android:key="sender_email"
+            android:title="Sender Email"
+            android:inputType="textEmailAddress"
+            android:summary="Your Gmail address"/>
+
+        <EditTextPreference
+            android:key="app_password"
+            android:title="App Password"
+            android:inputType="textPassword"
+            android:summary="Gmail app password (not your regular password)"/>
+
+        <EditTextPreference
+            android:key="recipient_email"
+            android:title="Recipient Email"
+            android:inputType="textEmailAddress"
+            android:summary="Where alerts should be sent"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
