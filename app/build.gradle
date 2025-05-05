@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.snapgpmail'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.example.snapgpmail"
@@ -22,11 +22,13 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_17
+//        targetCompatibility JavaVersion.VERSION_17
+//    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2' // Downgrade to a Java 8-compatible version
     }
-
     packagingOptions {
         exclude 'META-INF/NOTICE.md'
         exclude 'META-INF/LICENSE.md'
@@ -38,7 +40,6 @@ android {
 dependencies {
     // Explicitly declare Kotlin version (matches AGP's version)
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
-
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.recyclerview:recyclerview:1.3.1'
@@ -46,6 +47,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics:18.4.3'
     implementation libs.work.runtime
     implementation libs.firebase.storage
+    implementation 'com.google.firebase:firebase-functions:20.4.0'
+    implementation 'com.google.firebase:firebase-storage:20.3.0'
+    implementation 'com.google.firebase:firebase-auth:22.3.0'
+
+    // WorkManager (for offline emails)
+    implementation "androidx.work:work-runtime:2.8.1"
 
     // CameraX
     def camerax_version = "1.3.0-rc01"
