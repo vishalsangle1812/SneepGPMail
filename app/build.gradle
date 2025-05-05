@@ -44,6 +44,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.3.1'
     implementation 'androidx.preference:preference:1.2.1'
     implementation 'com.google.firebase:firebase-crashlytics:18.4.3'
+    implementation libs.work.runtime
+    implementation libs.firebase.storage
 
     // CameraX
     def camerax_version = "1.3.0-rc01"
@@ -53,7 +55,7 @@ dependencies {
 
     // Location
     implementation libs.play.services.location
-
+    implementation 'com.google.firebase:firebase-functions:20.4.0'
     // Email (with exclusions)
     implementation (libs.android.mail) {
         exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'

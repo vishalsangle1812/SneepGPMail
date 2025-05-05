@@ -8,4 +8,8 @@
     <string name="about">About</string>
     <string name="clear_history">Clear History</string>
     <string name="acknowledge">GOT IT</string>
+    <string name="email_subject">Attention required: Unauthorized access attempt</string>
+    <string name="email_body_header">Security Alert!\n\nSomeone tried to access your device multiple times.</string>
+    <string name="email_body_location">Device Location: %1$s</string>
+    <string name="email_body_footer">See attached image for the intruder.</string>
 </resources>
