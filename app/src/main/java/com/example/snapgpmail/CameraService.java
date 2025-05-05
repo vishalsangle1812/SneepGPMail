@@ -31,22 +31,20 @@ public class CameraService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         createNotificationChannel();
-        startForeground(NOTIFICATION_ID, createNotification("Initializing security capture..."));
+        startForeground(NOTIFICATION_ID, buildNotification("Security service running"));
     }
 
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
-                    AppController.CHANNEL_ID,
-                    "Security Captures",
+                    "security_channel",
+                    "Security Alerts",
                     NotificationManager.IMPORTANCE_HIGH
             );
-            notificationManager.createNotificationChannel(channel);
+            getSystemService(NotificationManager.class).createNotificationChannel(channel);
         }
     }
-
     private Notification createNotification(String message) {
         return new NotificationCompat.Builder(this, AppController.CHANNEL_ID)
                 .setContentTitle("Security Capture")
